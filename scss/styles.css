@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 50%;
+  }
+}
+.main {
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  padding: 2rem 16rem;
+  background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  width: 60%;
+}
+
+.logo {
+  margin-top: 5rem;
+  margin-bottom: 12rem;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.heading {
+  width: 40rem;
+  margin-bottom: 3.4rem;
+}
+
+.heading h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2rem;
+  color: hsl(0deg, 6%, 24%);
+  line-height: 1.2;
+}
+
+.heading h1::first-line {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+
+.heading-paragraph {
+  width: 45rem;
+  margin-bottom: 5.8rem;
+}
+
+.heading-paragraph p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(0deg, 36%, 70%);
+  line-height: 1.6;
+  letter-spacing: 0.09rem;
+  opacity: 0.9;
+}
+
+.email-input {
+  width: 45rem;
+  position: relative;
+  display: flex;
+}
+
+.email-input input {
+  width: 100%;
+  padding: 1.8rem 3rem;
+  border-radius: 3rem;
+  border: 0.08rem solid hsl(0deg, 36%, 70%);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.email-input input:focus {
+  outline: hsl(0deg, 36%, 70%);
+}
+
+.email-input input::-moz-placeholder {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.6;
+}
+
+.email-input input:-ms-input-placeholder {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.6;
+}
+
+.email-input input::placeholder {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.6;
+}
+
+.email-input button {
+  position: absolute;
+  right: 0;
+  padding: 1.65rem 5rem;
+  border-radius: 3rem;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  box-shadow: 0 0 5px hsl(0deg, 80%, 86%);
+  border: none;
+  cursor: pointer;
+}
+
+.container-img {
+  width: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#errMsg {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  color: hsl(0deg, 93%, 68%);
+  display: block;
+  font-size: 1.3rem;
+}
+
+#errIcon {
+  position: absolute;
+  right: 13rem;
+  top: 1.5rem;
+  display: none;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 2rem 8rem;
+    width: 60%;
+  }
+  .logo {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 2rem;
+    width: 60%;
+  }
+}
+@media (max-width: 716px) {
+  .container {
+    width: 50%;
+  }
+  .heading {
+    width: 100%;
+    margin-bottom: 5.2rem;
+  }
+  .heading h1 {
+    width: 100%;
+    font-size: 4rem;
+    letter-spacing: 1px;
+  }
+  .heading-paragraph {
+    width: 100%;
+    margin-bottom: 7.2rem;
+  }
+  .email-input {
+    width: 100%;
+  }
+  .email-input button {
+    padding: 1.55rem 3.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .container {
+    padding: 0;
+    background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+    width: 100%;
+  }
+  .logo {
+    margin: 3rem 0;
+    padding-left: 4rem;
+  }
+  .logo a img {
+    width: 15rem;
+  }
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .heading h1 {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    line-height: 1;
+  }
+  .heading-paragraph {
+    width: 100%;
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .heading-paragraph p {
+    line-height: 1.8;
+  }
+  .mobile-img {
+    height: 30rem;
+    width: 100%;
+    margin-bottom: 8rem;
+    display: block;
+  }
+  .mobile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+  .email-input {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .email-input button {
+    padding: 1.4rem 3.5rem;
+    margin-right: 4rem;
+  }
+  .container-img {
+    display: none;
+  }
+  #errMsg {
+    padding-left: 7rem;
+  }
+  #errIcon {
+    top: 1.25rem;
+  }
+  .attribution {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
